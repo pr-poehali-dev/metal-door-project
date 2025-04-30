@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 220 13% 95%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -13,17 +13,17 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 240 5.9% 25.5%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
+    --secondary: 240 5.9% 35%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 260 66% 49.8%;
+    --accent-foreground: 210 40% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -35,19 +35,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -97,5 +90,27 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .door-card {
+    @apply relative overflow-hidden bg-white rounded-md shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+  
+  .door-card-image {
+    @apply relative w-full h-80 overflow-hidden;
+  }
+  
+  .door-card-content {
+    @apply p-6 bg-gradient-to-b from-transparent to-white;
+  }
+  
+  .door-exhibit {
+    @apply flex flex-col items-center;
+  }
+  
+  .door-exhibit-platform {
+    @apply bg-metal-dark/10 rounded-xl shadow-inner w-full h-16 mt-[-1rem];
   }
 }
