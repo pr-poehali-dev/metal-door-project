@@ -7,7 +7,7 @@ const HeroSection = () => {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1558404979-e2eb59327832?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')",
+          backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1531165338688-ccf6562eac04?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')",
           backgroundSize: "cover",
           backgroundPosition: "center"
         }}
