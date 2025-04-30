@@ -26,6 +26,16 @@ const doors = [
     features: ["Взломостойкость", "Звукоизоляция", "Терморазрыв"]
   },
   {
+    id: "burkovsky1",
+    name: "Burkovsky Diamond",
+    image: "https://cdn.poehali.dev/files/7565b991-72b4-427e-a85f-04c472b44574.jpg",
+    price: 145000,
+    rating: 5.0,
+    security: "Высшая степень защиты",
+    features: ["Геометрический дизайн", "Дерево премиум", "Цифровой замок"],
+    isNew: true
+  },
+  {
     id: "door3",
     name: "Эталон 90",
     image: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
@@ -42,6 +52,16 @@ const doors = [
     rating: 4.6,
     security: "Стандартная защита",
     features: ["Утепленная", "Усиленный каркас", "Влагостойкая"]
+  },
+  {
+    id: "burkovsky2",
+    name: "Burkovsky Geometric",
+    image: "https://cdn.poehali.dev/files/7565b991-72b4-427e-a85f-04c472b44574.jpg",
+    price: 128000,
+    rating: 4.9,
+    security: "Премиальная защита",
+    features: ["Деревянные панели", "3D дизайн", "Биометрический доступ"],
+    isNew: true
   },
   {
     id: "door5",
@@ -93,6 +113,9 @@ const Catalog = () => {
             <Button variant="outline" size="sm" className="rounded-full">
               Для дома
             </Button>
+            <Button variant="outline" size="sm" className="rounded-full bg-accent/10 text-accent border-accent/30">
+              Дизайнерские
+            </Button>
           </div>
         </div>
         
@@ -104,7 +127,7 @@ const Catalog = () => {
           <div className="lg:w-3/4 xl:w-4/5">
             <div className="bg-white p-4 rounded-lg shadow-sm mb-6 flex flex-col sm:flex-row justify-between items-center">
               <div className="mb-4 sm:mb-0">
-                <p className="text-metal-light">Найдено: <span className="font-medium text-metal-dark">6 моделей</span></p>
+                <p className="text-metal-light">Найдено: <span className="font-medium text-metal-dark">8 моделей</span></p>
               </div>
               
               <div className="flex gap-3 items-center">
